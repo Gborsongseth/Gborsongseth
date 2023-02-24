@@ -2169,23 +2169,18 @@ font-size: 0.9rem;
 color: #fff;
   }
 .gallary {
-    height: 60vh;
-  }
-  .gala-title{
-   padding-top:20px;
+   padding-top: 20px;
+   height: 57vh;
   }
   .inside-gallary {
     width: 100%;
     justify-content:start;
-    
-  
+    gap: 10px;
+    height: 60vh;
   }
   .parent {
-    padding:0 20px;
+    padding:0 18px;
   }
-
-
-
 
 
 @media screen and (max-width: 320px) {
