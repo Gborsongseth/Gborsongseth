@@ -2132,7 +2132,6 @@ letter-spacing: 2px;
     width: 100%;
     gap: 10px;
     margin-bottom: 15px;
-    background-color: aqua;
   }
 
   .product-wrap {
@@ -2168,15 +2167,17 @@ margin: 0 5px;
 font-size: 0.9rem;
 color: #fff;
   }
-.gala-title {
-margin-top: 20px;
-}
-.inside-gallary {
-padding-top: 0%;
-gap:0 ;
-width: 100%;
-background-color: blue;
-}
+.gallary {
+    height: 50vh;
+  }
+  .inside-gallary {
+    width: 100%;
+    justify-content:start;
+  
+  }
+  .parent {
+    padding:0 20px;
+  }
 
 
 
