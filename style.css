@@ -2117,6 +2117,71 @@ letter-spacing: 2px;
 
       
 }
+
+@media screen and (max-width: 414px) {
+
+  .navbar-brand{
+    width:25%;
+  }
+  
+  section.our-card {
+    margin: auto;
+    width: 100% !important;
+  }
+  .product-cover {
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 15px;
+    background-color: aqua;
+  }
+
+  .product-wrap {
+    position: relative;
+    width: 345px;
+    height: 300px;
+    margin: 12px;
+  }
+
+  .product-img-1,
+  .product-img-2,
+  .product-img {
+    width: 345px;
+    height: 300px;
+    background-size: 100%;
+  }
+.product-details-1,
+.product-details-2,
+.product-details-3 {
+position: absolute;
+width: 345px;
+height: 160px;
+top: 54%;
+}
+.product-text {
+padding: 7px 10px;
+font-size: 0.9rem;
+}
+.product-btn-1,
+.product-btn-2,
+.product-btn-3 {
+margin: 0 5px;
+font-size: 0.9rem;
+color: #fff;
+  }
+.gala-title {
+margin-top: 20px;
+}
+.inside-gallary {
+padding-top: 0%;
+gap:0 ;
+width: 100%;
+background-color: blue;
+}
+
+
+
+
+
 @media screen and (max-width: 320px) {
   .about-text{
     font-size: 1.15rem;
