@@ -64,12 +64,13 @@ body {
 
 .carousel {
   background-color: #ff99006b;
+  min-height: 100vh;
 }
 
 .img-slide {
   position: relative;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   margin: auto;
 }
 
@@ -81,6 +82,7 @@ body {
   flex-direction: column;
   justify-content: center;
   clip-path: circle(0% at 0 50%);
+  max-height: 100vh;
 }
 .img-slide .slide.active {
   clip-path: circle(150% at 0 50%);
@@ -90,7 +92,7 @@ body {
 .img-slide .slide img {
   z-index: 1;
   width: 100%;
-  height: 100vh;
+  max-height: 100vh;
   object-fit: cover;
 }
 .img-slide .slide .info {
@@ -117,7 +119,7 @@ body {
   position: absolute;
   background: rgba(0, 0, 0, 0.219);
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .img-slide .slide .info .info-b {
@@ -224,13 +226,12 @@ body {
   font-weight: 200;
   font-size: 1rem;
   letter-spacing: 1px;
-  color: #696969;
+  color: #131313;
 }
 .about-contents {
   display: flex;
   justify-content: center;
 }
-
 .about-box-items {
   display: flex;
   width: 70%;
@@ -297,20 +298,20 @@ section.our-card {
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
-  min-height: 60vh;
+  min-height: 60dvh;
 }
 
 .product-wrap {
   position: relative;
   width: 40vw;
   border-radius: 10px;
-  min-height: 48vh;
+  min-height: 48dvh;
 }
 
 .product-img-1 {
   background-image: url(/images/lab.jpg);
   max-width: 30vw;
-  min-height: 35vh;
+  min-height: 35dvh;
   background-size: cover;
   border-radius: 8px 8px 0 0;
   background-repeat: no-repeat;
@@ -319,7 +320,7 @@ section.our-card {
 .product-img-2 {
   background-image: url(/images/classroom.jpg);
   max-width: 30vw;
-  min-height: 35vh;
+  min-height: 35dvh;
   background-size: cover;
   border-radius: 8px 8px 0 0;
   background-repeat: no-repeat;
@@ -328,7 +329,7 @@ section.our-card {
 .product-img {
   background-image: url(/images/ACE_0537.JPG);
   max-width: 30vw;
-  min-height: 35vh;
+  min-height: 35dvh;
   background-size: cover;
   border-radius: 8px 8px 0 0;
   background-repeat: no-repeat;
@@ -562,10 +563,9 @@ hr {
 .gallary-info {
   padding: 1rem;
 }
+
 .gallary-text {
-  color: #000000;
   font-family: "montserrat";
-  font-weight: 200;
   font-size: 1rem;
   letter-spacing: 1px;
   color: #000000;
@@ -577,7 +577,7 @@ hr {
 }
 .testimonial-text {
   font-family: "monsterrat" "sans-serif";
-  font-size: 2.5rem;
+  font-size: 4.5rem;
   color: #ff9800;
   font-weight: 700;
   text-align: center;
@@ -780,18 +780,19 @@ hr {
 @media screen and (max-width: 87.5rem) {
   .img-slide {
     width: 100%;
-    height: 90vh;
+    max-height:100dvh;
   }
 
   .img-slide .slide {
     width: 100%;
+    min-height:100dvh;
   }
   .img-slide .slide img {
     width: 100%;
-    height: 90vh;
+    min-height:100dvh;
   }
   .img-slide .slide .info-content {
-    height: 90vh;
+   min-height:100dvh;
   }
 
   .product-img-1,
@@ -809,21 +810,21 @@ hr {
 @media screen and (max-width: 71.875rem) {
   .img-slide {
     width: 100%;
-    height: 90vh;
+    max-height:90dvh;
   }
 
   .img-slide .slide {
     width: 100%;
-    height: 90vh;
+    max-height:90dvh;
   }
 
   .img-slide .slide img {
     max-width: 100%;
-    height: 90vh;
+    max-height:90dvh;
   }
   .img-slide .slide .info-content {
     width: 100%;
-    height: 90vh;
+    max-height:90dvh;
   }
   .about {
     min-width: 90%;
@@ -839,7 +840,6 @@ hr {
   .product-wrap {
     position: relative;
     width: 26vw;
-    height: 35vh;
   }
   .product-img-1,
   .product-img-2,
@@ -876,23 +876,49 @@ hr {
 }
 
 @media screen and (max-width: 67.188rem) {
+  .carousel {
+    background-color: #ff99006b;
+    min-height: 90dvh;
+  }
   .img-slide {
     width: 100%;
-    height: 80vh;
+    min-height:90dvh;
   }
 
   .img-slide .slide {
     width: 100%;
-    height: 80vh;
+    min-height:90dvh;
   }
 
   .img-slide .slide img {
     max-width: 100%;
-    height: 80vh;
+    min-height:90dvh;
   }
   .img-slide .slide .info-content {
     width: 100%;
-    height: 80vh;
+    min-height:90dvh;
+  }
+  .img-slide .slide .info h2 {
+    font-size: 4rem;
+    line-height: 4rem;
+    font-weight: 700;
+    letter-spacing: 5px;
+    width: 100%;
+  }
+  .img-slide .slide .info {
+    top: 34%;
+  }
+  .about-text{
+    font-size: 4rem;
+  }
+  .mission-title{
+    font-size: 4rem;
+  }
+  .gala-title{
+    font-size: 4rem;
+  }
+  .testimonial-text{
+    font-size: 4rem;
   }
   .our-card {
     padding: 0;
@@ -928,22 +954,35 @@ hr {
   }
 
   .img-slide .slide .info h2 {
-    font-family: montserrat;
-    font-size: 3.9rem;
+    font-size: 3.5rem;
     line-height: 3.6rem;
-    font-weight: 700;
-    width: 80%;
+    font-weight: 900;
+    width: 70%;
   }
-  .about-text {
-    font-size: 3.9rem;
+  .img-slide .slide .info {
+    width: 60%;
+  }
+  .about-text{
+    font-size: 3.5rem;
+  }
+  .mission-title{
+    font-size: 3.5rem;
+  }
+  .gala-title{
+    font-size: 3.5rem;
+  }
+  .testimonial-text{
+    font-size: 3.5rem;
   }
   .best-text {
     font-size: 1.5rem;
     font-weight: 500;
   }
   .best-item {
-    color: #000000;
     font-weight: 220;
+  }
+  .about-intro{
+    padding-top: 2.8rem;
   }
   .text-title {
     font-size: 1.2rem;
@@ -1010,6 +1049,9 @@ hr {
   .our-system {
     margin-left: 15%;
   }
+  .img-slide .slide .info h2 {
+    width: 100%;
+  }
   .img-slide .slide .info .info-b-1 {
     padding: 8px 15px;
     font-size: 1.8rem;
@@ -1038,14 +1080,12 @@ hr {
   .testimonials {
     padding-top: 20px;
     width: 100%;
-    height: 60vh;
     background-color: #e5e5e5;
   }
 
   .testimonial-box .inner-box {
     background-color: rgb(255, 255, 255);
     width: 75%;
-    height: 40vh;
   }
 
   .testimonial-box .inner-box .testimonial-image {
@@ -1106,14 +1146,17 @@ hr {
     align-items: center;
     margin-top: 40px;
   }
+  .img-slide .slide .info {
+    width: 80%;
+  }
+  .img-slide .slide .info h2 {
+    width: 80%;
+  }
   .product-cover {
     gap: 1rem;
   }
   .inside-gallary {
     width: 90%;
-  }
-  .testimonial-text {
-    font-size: 1.5rem;
   }
   .testimonial-box .inner-box .testimonial-image {
     height: 100px;
@@ -1123,21 +1166,21 @@ hr {
 @media screen and (max-width: 54.688rem) {
   .img-slide {
     width: 100%;
-    height: 70vh;
+    min-height: 90dvh;
   }
 
   .img-slide .slide {
     width: 100%;
-    height: 70vh;
+    min-height: 90dvh;
   }
 
   .img-slide .slide img {
     max-width: 100%;
-    height: 70vh;
+    min-height: 90dvh;
   }
   .img-slide .slide .info-content {
     width: 100%;
-    height: 70vh;
+    min-height: 90dvh;
   }
   .colors {
     max-width: 100vw;
@@ -1168,23 +1211,26 @@ hr {
 }
 
 @media screen and (max-width: 48.75rem) {
+  .carousel {
+    min-height: 80dvh;
+  }
   .img-slide {
     width: 100%;
-    height: 60vh;
+    min-height: 80dvh;
   }
 
   .img-slide .slide {
     width: 100%;
-    height: 60vh;
+    min-height: 80dvh;
   }
 
   .img-slide .slide img {
     max-width: 100%;
-    height: 60vh;
+    min-height: 80dvh;
   }
   .img-slide .slide .info-content {
     width: 100%;
-    height: 60vh;
+    min-height: 80dvh;
   }
   .navbar {
     background-color: #ff5252;
@@ -1232,11 +1278,11 @@ hr {
     text-align: left;
     font-family: montserrat;
   }
-
   .best-text {
     letter-spacing: 1px;
   }
   .best-item {
+   font-weight: normal;
     font-size: 0.9rem;
     letter-spacing: 1px;
   }
@@ -1262,27 +1308,32 @@ hr {
   }
   .our-card {
     max-width: 100vw;
+   
   }
   .product-cover {
     flex-direction: column;
-    gap: 3rem;
+    gap: 3.5rem;
+    padding: 3rem 0rem;
   }
   .product-wrap {
-    width: 90vw;
-    min-height: 65dvh;
+    min-width: 70vw;
     border-radius: 10px;
+    margin-bottom: 2rem;
   }
   .product-img-1,
   .product-img-2,
   .product-img {
-    min-width: 90vw;
-    min-height: 50dvh;
+    min-width: 70vw;
+    background-position: top top;
+   
   }
   .product-details-1,
   .product-details-2,
   .product-details-3 {
-    min-width: 90vw;
-    top: 69%;
+    min-width: 70vw;
+    border-radius: 0 0 8px 8px;
+    padding: 1rem;
+    top: 70%;
   }
   .title-box {
     max-width: 90vw;
@@ -1322,6 +1373,7 @@ hr {
   }
   .counter {
     width: 100%;
+    padding:2rem 0;
   }
   .inner-counter {
     width: 100%;
@@ -1375,22 +1427,25 @@ hr {
   }
 }
 @media screen and (max-width: 38.75rem) {
+  .carousel {
+    min-height: 75dvh;
+  }
   .img-slide {
     width: 100%;
-    height: 50vh;
+    min-height: 75dvh;
   }
 
   .img-slide .slide {
     width: 100%;
-    height: 50vh;
+    min-height: 75dvh;
   }
 
   .img-slide .slide img {
     max-width: 100%;
-    height: 50vh;
+    min-height: 75dvh;
   }
   .img-slide .slide .info-content {
-    height: 50vh;
+    min-height: 75dvh;
   }
 
   .img-slide .slide .info {
@@ -1415,9 +1470,9 @@ hr {
   .img-slide .slide .info h2 {
     font-size: 2.8rem;
     line-height: 40px;
-    font-weight: 500;
+    font-weight: 700;
     letter-spacing: 5px;
-    width: 85%;
+    width: 100%;
   }
 
   .colors {
@@ -1442,6 +1497,8 @@ hr {
   }
   .items-wrapper {
     width: 90%;
+  }.product-wrap{
+    margin-bottom: 2rem;
   }
   .contents {
     display: flex;
@@ -1460,7 +1517,9 @@ hr {
   .about-image-wrapper {
     width: 50%;
   }
-
+  .testimonial-box .inner-box .testimonial-image {
+    width: 40%;
+  }
   .testimonial-box .inner-box {
     width: 90%;
     height: 40vh;
@@ -1473,10 +1532,11 @@ hr {
   .testimonials {
     padding-top: 20px;
     width: 100%;
-    height: 65vh;
+    padding-bottom: 25px;
   }
   .testimonial-text {
-    font-size: 2rem;
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
     color: #ff9800;
   }
   .testimonial-details .owner-text {
@@ -1486,7 +1546,7 @@ hr {
   }
   .testimonial-box {
     width: 50%;
-    height: 48vh;
+  
   }
   @keyframes animate {
     0% {
@@ -1514,9 +1574,7 @@ hr {
     }
   }
   .footer-part-1 {
-    width: 100%;
-    margin-left: 30px;
-    margin-bottom: 30px;
+  margin-bottom: 30px;
   }
 }
 @media screen and (max-width: 36rem) {
@@ -1544,21 +1602,25 @@ hr {
     max-width: 90%;
   }
   .about-intro {
-    padding-top: 1rem;
+    padding-top: 3.5rem;
   }
   .about-text {
     font-size: 2.2rem;
     font-weight: 700;
     letter-spacing: 2px;
-  }.product-cover {
+  }
+  .product-cover {
     flex-direction: column;
-    gap: 1rem;
+    gap: 4rem;
+  }
+  .product-wrap{
+    margin-bottom: 1rem;
   }
   .product-details-1,
   .product-details-2,
   .product-details-3 {
-    min-width: 90vw;
-    top: 65%;
+    max-width: 60%;
+    top: 60%;
   }
   .title-box{
     padding-top: 0;
@@ -1657,22 +1719,25 @@ hr {
   }
 }
 @media screen and (max-width: 34.313rem) {
+  .carousel {
+    min-height: 70dvh;
+  }
   .img-slide {
     width: 100%;
-    height: 40dvh;
+   min-height: 70dvh;
   }
 
   .img-slide .slide {
     width: 100%;
-    height: 40dvh;
+    min-height: 70dvh;
   }
 
   .img-slide .slide img {
     max-width: 100%;
-    height: 40dvh;
+    min-height: 70dvh;
   }
   .img-slide .slide .info-content {
-    height: 40dvh;
+    min-height: 70dvh;
   }
   .img-slide .slide .info h2 {
     font-size: 1.7rem;
@@ -1682,13 +1747,12 @@ hr {
     width: 80%;
   }
   .img-slide .slide .info {
-    top: 40%;
+    top: 38%;
   }
   .img-slide .slide .info .info-b {
     padding: 3px 12px;
     font-size: 1rem;
   }
-
   .img-slide .slide .info .info-b-1 {
     padding: 3px 12px;
     font-size: 1rem;
@@ -1698,10 +1762,185 @@ hr {
     padding: 3px 12px;
     font-size: 1rem;
   }
+  .product-cover{
+    gap: 2rem;
+    padding: 1rem 0;
+  }
+  .about-intro{
+  padding-top: 3.5rem;
+  }
   .about-text{
     font-size: 1.7rem;
   }
   .best-text{
-    font-size: 1.2rem; 
+    font-size: 1.1rem; 
+    font-weight: 700;
   }
+   .inner-counter{
+  padding-top: 0;
+}
+}
+@media screen and (max-width: 27.375rem){
+  .carousel {
+        min-height: 60dvh;
+  }
+  .img-slide {
+   min-height: 60dvh;
+  }
+  .img-slide .slide {
+    min-height: 60dvh;
+  }
+  .img-slide .slide img {
+    min-height: 60dvh;
+  }
+  .img-slide .slide .info-content {
+    min-height: 60dvh;
+}
+.img-slide .slide .info h2 {
+  font-size: 2.3rem;
+  line-height:40px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  width: 100%;
+}
+.img-slide .slide .info {
+  top: 38%;
+  margin-left: 15px;
+  width: 90%;
+}
+.about{
+  min-width: 94vw;
+}
+.about-intro{
+  padding-top: 3rem;
+}
+
+.items-wrapper{
+  min-width: 100%;
+}
+.contents{
+  min-width: 100%;
+}
+.about-image-wrapper {
+  min-width: 70%;
+}
+.about-pic {
+  min-width: 100%;
+}
+.about-text{
+  font-weight: 600;
+  letter-spacing: 0px;
+  font-size: 1.8rem;
+}
+.best-text{
+  font-weight: 400;
+  letter-spacing: 0px;
+}
+.product-cover{
+  gap: 0.5rem;
+  padding: 1rem 0;
+}
+.gala-title,.mission-title,.testimonial-text{
+  font-size: 2rem;
+}
+.testimonial-box .inner-box .testimonial-image {
+  height: 90px;
+  width: 45%;
+}
+}
+@media screen and (max-width: 23.75rem){
+  .carousel {
+    min-height: 55dvh;
+  }
+  .img-slide {
+   min-height: 55dvh;
+  }
+  .img-slide .slide {
+    min-height: 55dvh;
+  }
+  .img-slide .slide img {
+    min-height: 55dvh;
+  }
+  .img-slide .slide .info-content {
+    min-height: 55dvh;
+}
+.img-slide .slide .info h2 {
+  font-size: 2rem;
+  line-height:30px;
+  font-weight: 800; 
+  letter-spacing: 3px;
+  width: 100%;
+}
+.img-slide .slide .info {
+  top:40%;
+  margin-left: 10px;
+  width: 90%;
+}
+.about{
+  min-width: 96%;
+}
+.about-intro{
+  padding-top: 1rem;
+}
+.about-text{
+  font-weight: 200;
+  font-size: 1.5rem ;
+}
+.neat{
+  font-weight: 500;
+  font-size: 2rem ;
+}
+.best-text{
+  font-size: 1rem;
+  font-weight: 600;
+}
+.product-cover {
+  flex-direction: column;
+}
+.product-wrap{
+  width:90%;
+  margin-bottom: 1rem;
+}
+.product-img-1,
+.product-img-2,
+.product-img {
+  min-width: 100%;
+  background-position: top top;
+ 
+}
+.product-details-1,
+.product-details-2,
+.product-details-3 {
+  max-width: 100vw;
+  top: 60%;
+}
+.testimonial-box .inner-box {
+  padding-top:50px;
+  margin-bottom: 20px;
+  min-width: 70vw;
+}
+.testimonial-box .inner-box .testimonial-image {
+  height: 90px;
+  width: 35%;
+}
+.testimonials {
+  padding-top: 20px;
+  width: 100%;
+}
+.testimonial-text {
+  font-size: 2rem;
+}
+.testimonial-box {
+  min-width: 70vw;
+  padding-bottom: 20px;
+ 
+}
+.testimonial-details .owner {
+  font-size: 1rem;
+ 
+}
+.testimonial-details .owner-text {
+  font-size: 0.75rem;
+  padding-top:10px ;
+}
 }
