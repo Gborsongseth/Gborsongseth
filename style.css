@@ -298,20 +298,20 @@ section.our-card {
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
-  min-height: 60dvh;
+  min-height: 60vh;
 }
 
 .product-wrap {
   position: relative;
   width: 40vw;
   border-radius: 10px;
-  min-height: 48dvh;
+  min-height: 48vh;
 }
 
 .product-img-1 {
   background-image: url(/images/lab.jpg);
   max-width: 30vw;
-  min-height: 35dvh;
+  min-height: 35vh;
   background-size: cover;
   border-radius: 8px 8px 0 0;
   background-repeat: no-repeat;
@@ -320,7 +320,7 @@ section.our-card {
 .product-img-2 {
   background-image: url(/images/classroom.jpg);
   max-width: 30vw;
-  min-height: 35dvh;
+  min-height: 35vh;
   background-size: cover;
   border-radius: 8px 8px 0 0;
   background-repeat: no-repeat;
@@ -329,7 +329,7 @@ section.our-card {
 .product-img {
   background-image: url(/images/ACE_0537.JPG);
   max-width: 30vw;
-  min-height: 35dvh;
+  min-height: 35vh;
   background-size: cover;
   border-radius: 8px 8px 0 0;
   background-repeat: no-repeat;
@@ -782,7 +782,6 @@ hr {
     width: 100%;
     max-height:100vh;
   }
-
   .img-slide .slide {
     width: 100%;
     min-height:100vh;
@@ -794,7 +793,6 @@ hr {
   .img-slide .slide .info-content {
    min-height:100vh;
   }
-
   .product-img-1,
   .product-img-2,
   .product-img {
