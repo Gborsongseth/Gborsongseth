@@ -19,15 +19,18 @@ body {
 }
 .contact-link {
   text-decoration: none;
-  padding: 0.5rem 0.2rem;
+  padding: 0.5rem 0.9rem;
   font-size: 0.7rem;
-  color: black;
+  background-color:#155674;
   border-bottom: 2px solid transparent;
   transition: all 0.2s ease;
   font-family: montserrat, sans-serif;
+  color: white;
+  
+  
 }
 .contact-link:hover {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 252, 252);
   font-size: 0.7rem;
   border-bottom: 2px solid #ff9800 !important ;
 }
@@ -101,7 +104,7 @@ body {
   color: aliceblue;
   margin-left: 100px;
   top: 40%;
-  width: 60%;
+  width: 70%;
   animation: drop 1.5s ease;
 }
 @keyframes drop {
@@ -218,16 +221,19 @@ body {
   font-size: 2rem;
   color: #444444;
   font-weight: 300;
-  margin: 5px 0;
+  margin:5px 0;
+  margin-top: 20px;
+ 
 }
 .best-item {
   font-family: "monsterrat" "sans-serif";
-  font-size: 1rem;
+  font-size: 1rem; 
+  margin-bottom: 40px;
 }
 .about-contents {
   display: flex;
   justify-content: center;
-  margin-bottom:25px;
+  margin-bottom:4rem;
 }
 .about-box-items {
   display: flex;
@@ -279,13 +285,13 @@ body {
   max-width: 20%;
 }
 .about-pic {
-  max-width: 100%;
+  max-width: 80%;
 }
 section.our-card {
   max-width: 100vw;
   margin: auto;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 5rem;
 }
 .preschool{
   border: solid  #ff5252 2px;
@@ -335,7 +341,9 @@ border: solid 2px  #ff5252;
   display: flex;
   max-width: 80vw;
   margin: auto;
-  padding-bottom: 2%;
+  margin-top:3rem;
+  margin-bottom:3rem;
+
 }
 .mission-1 {
   max-width: 25vw;
@@ -454,7 +462,7 @@ hr {
   display: flex;
   align-items: center;
   gap: 1rem;
-  padding: 4rem 0;
+  padding: 5rem 0;
 }
 .gala-title {
   font-family: "monsterrat" "sans-serif";
@@ -492,7 +500,8 @@ transition: all 0.3s;
 
 .gallary-text {
   font-family: "montserrat";
-  font-size: 1rem;
+  font-weight: 200;
+  font-size: 1.2rem;
   letter-spacing: 1px;
   color: #000000;
 }
@@ -544,7 +553,6 @@ transition: all 0.3s;
 .wrapper .inner-box:last-child {
   animation-delay: calc(-5s * var(--delay));
 }
-
 @keyframes animate {
   0% {
     opacity: 0;
@@ -1401,7 +1409,7 @@ transition: all 0.3s;
       opacity: 0.4;
       transform: translateX(-100%) scale(0);
     }
-    65%,
+    75%,
     100% {
       opacity: 0;
     }
@@ -1834,5 +1842,450 @@ transition: all 0.3s;
     opacity: 0;
   }
 } 
-
 }
+/* contact-page styles */
+.contact-section{
+  background-image: url(/images/IMG_0157.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 60vh;
+ 
+}
+.contact-section-inner{
+min-height: 60vh;
+background-color: #00345cb3;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+background-attachment: fixed;
+}
+.contact-title{
+  padding-top: 6rem;
+  font-family: "montserrat", "sans-serif";
+  font-size: 4.5rem;
+  font-weight: 700;
+  letter-spacing: 5px;
+  color: white;
+}
+.clean{
+  color:#ff9800;
+}
+.contact-text{
+  text-align: center;
+  font-weight:100;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+}
+.contact-key{
+  font-size: 2rem !important;
+  color: white ;
+  position: absolute;
+  top:55% !important;
+  animation-name: bounce;
+  animation: bounce;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes bounce {
+  0%, 25%, 50%, 80%, 100% {  
+     transform:translateY(0);
+}
+40%{  
+  transform:translateY(5px);
+}
+60%{  
+  transform:translateY(4px);
+}
+}
+.contact-body{
+  padding: 8rem;
+}
+.contact-body-inner{
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin: auto;
+}
+.contact-detail-box{
+  width: 50% ;
+  background-color: #155674;
+  padding: 3rem;
+}
+.contact-info-title{
+  font-family: "montserrat";
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.899);
+  font-weight: 700;
+  letter-spacing: 3px;
+  line-height: 1.5em;
+  margin-bottom: 10px;
+  position: relative;
+}
+.contact-info-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  background-color: rgb(255, 255, 255);
+  height: 2px;
+  box-sizing: border-box;
+  width: 30px;
+}
+.contact-items {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 15px;
+}
+.contact-info-text {
+  font-weight: 200;
+  font-family: "montserrat";
+  color: white;
+}
+.contact-form-box{
+  width: 50% ;
+}
+.form-title{
+  font-family: "montserrat";
+  font-size: 1.7rem;
+  color: rgba(24, 24, 24, 0.899);
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1.5em;
+  margin-bottom: 5px;
+  position: relative;
+}
+.form-info-text{
+  font-weight: 200;
+  font-family: "montserrat";
+  color: rgba(24, 24, 24, 0.899);
+  font-size:0.9rem;
+}
+.field{
+  width:100%;
+  padding:0.5rem 1rem;
+  outline:none;
+  border: 1px solid #155674;
+  background-color: rgba(230, 230, 230, 0.6);
+  font-size: 0.8rem;
+  margin-bottom: 1.3rem;
+  transition: .3s;
+  border-radius:5px;
+  font-weight: 200;
+  font-family: "montserrat";
+}
+.form-button{
+  border: none;
+  padding:0.6rem 3.5rem;
+  background-color: #155674;
+  color: #e5e5e5;
+  border-radius: 20px;
+}
+@media screen and (max-width:78.125rem){
+  .contact-section{
+    min-height: 50vh !important;
+  }  
+  .contact-section-inner{
+    min-height: 50vh !important;
+  }
+  .contact-key{
+    font-size: 2rem;
+    top:45% !important ;
+  }
+}
+@media screen and (max-width:71.875rem){
+  .contact-section{
+    min-height: 50vh !important;
+  }  
+  .contact-section-inner{
+    min-height: 50vh !important;
+  }
+}
+
+@media screen and (max-width:65rem){
+  .contact-section{
+    min-height: 46vh !important;
+  }
+  .contact-section-inner{
+    min-height: 46vh !important;
+  }
+  .contact-key{
+    font-size: 2rem;
+    top:40% !important;
+  }
+.contact-title{
+  font-size:2.8rem;
+  padding-top: 4rem;
+}
+.contact-text{
+  font-size: 1rem;
+}
+.contact-body{
+  padding: 8rem 0;
+}
+}
+@media screen and (max-width:58.75rem){
+  .contact-section{
+    background-image: url(/images/compound.JPG) !important;
+    min-height: 50vh !important;
+  }
+  .contact-section-inner{
+  min-height: 50vh !important;
+  }
+  .contact-title{
+    font-size:3rem;
+    padding-top: 5rem;
+  }
+  .contact-text{
+    font-size:1rem;
+  }
+  .contact-key{
+    top:45% !important;
+  }
+  .contact-body{
+    padding: 8rem 0;
+  }
+  }
+  @media screen and (max-width:48.75rem){
+    .contact-body-inner{
+    width:80%;
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-detail-box{
+  margin-top:5rem;
+  width: 100%;
+  background-color: #155674;
+  }
+  .contact-body{
+    padding: 0rem;
+  }
+  .contact-form-box{
+  width: 100%;
+  margin-bottom:5rem;
+  }
+  .contact-section{
+    background-size: 100%;
+    min-height: 48vh;
+  }
+  .contact-section-inner{
+  min-height: 48vh;
+  }
+  .contact-title{
+    padding-top: 4rem;
+  }
+  }
+  @media screen and (max-width:46.875rem){
+    .contact-title{
+      font-size: 3rem;
+      padding-top: 4rem;
+    }
+    .contact-section{
+      min-height: 50vh
+    }
+    .contact-section-inner{
+    min-height: 50vh;
+    } 
+    .contact-key{
+      top:45% !important;
+    }
+    .contact-text{
+      font-size: 1rem;
+    }
+  }
+  
+  @media screen and (max-width:43.75rem){
+  .contact-title{
+    padding-top:5rem;
+    font-weight: 800;
+  }
+  }
+  @media screen and (max-width:38.75rem){
+    .contact-section{
+      background-image: url(/images/compound\ 2\ 1.jpg) !important;
+      min-height: 46vh !important;
+    }
+    .contact-section-inner{
+    min-height: 46vh !important;
+    } 
+    .contact-key{
+      top:40% !important ;
+  }
+}
+  @media screen and (max-width:35.625rem){
+    .contact-section{
+      min-height: 40vh !important; 
+    }
+    .contact-section-inner{
+    min-height: 40vh !important;
+  }
+  .contact-key{
+    top:35% !important; 
+  }
+  .contact-title{
+    padding-top:2.8rem;
+    font-weight: 600;
+  }
+  }
+
+  @media screen and (max-width:34.375rem ){
+    .contact-section{
+      background-image: url(/images/compound.JPG) !important;
+      min-height: 50vh !important;
+    }
+    .contact-section-inner{
+    min-height: 50vh !important;
+  }
+    .contact-title{
+      padding-top:4rem;
+      font-size: 2.3rem;
+    }
+    .contact-text{
+      font-size: 0.9rem;
+    }
+    .contact-info-title{
+      font-family: "montserrat";
+      font-size: 1.2rem;
+      letter-spacing: 3px;
+    }
+    .contact-info-text {
+      font-size: 0.9rem;
+      font-weight: 200;
+      font-family: "montserrat";
+      color: white;
+    }
+    .contact-section{
+      min-height: 30vh;
+    }
+    .contact-section-inner{
+    min-height: 30vh;
+    } 
+    .contact-key{
+      top:45% !important ;
+    }
+  }
+   /* For Tablet Portrait View (530 px) */
+   @media screen and (max-width:33.125rem) {
+    .contact-section{
+     
+      min-height: 45vh !important;
+    }
+    .contact-section-inner{
+    min-height: 45vh !important;
+  }
+  .contact-key{
+    top: 39% !important;
+  }
+   }
+  /* For Mobile Portrait View (480 px) */
+  @media screen and (max-width:30rem)  and (orientation: portrait) {
+    .contact-section{
+      background-image: url(/images/compound.JPG) !important;
+      min-height: 40vh !important;
+    }
+    .contact-section-inner{
+    min-height: 40vh !important;
+  }
+  .contact-title{
+    padding-top:4.5rem;
+    font-size: 1.731rem;
+  }
+  .contact-key{
+  font-size: 1.3rem !important ;
+    top:41% !important ;
+  }
+  .contact-text{
+    font-size:0.75rem;
+  }
+  .contact-detail-box{
+    margin-top:3.5rem;
+  }
+  .contact-body-inner{
+    min-width:90vw;
+  }
+
+  }
+   /* For Mobile Portrait View (462px) */
+  @media screen and (max-width:28.875rem ){
+    .contact-section{
+      background-image: url(/images/compound.JPG) !important;
+      min-height: 40vh !important;
+    }
+    .contact-section-inner{
+    min-height: 40vh !important;
+  }
+  .contact-key{
+    top:36% !important;
+  }
+  }
+  /* For Mobile Portrait View (460px) */
+  @media screen and (max-width:28.75rem){
+    .contact-section{
+      min-height: 40vh !important;
+    }
+    .contact-section-inner{
+    min-height: 40vh !important;
+  } 
+  .contact-text{
+    padding: 0 2rem;
+    font-size:0.75rem;
+  }
+  .contact-key{
+    top:31% !important;
+  }
+  .contact-title{
+    padding-top:2.5rem;
+    font-size: 1.5rem;
+  }
+  }
+    /* For Mobile Portrait View (425 px)  */
+  @media screen and (max-width:26.563rem){
+    .contact-section{
+      background-image: url(/images/compound.JPG) !important;
+      min-height: 35vh !important;
+    }
+    .contact-section-inner{
+    min-height: 35vh !important;
+  }
+  .contact-key{
+    font-size: 2rem;
+    top:30%;
+  }
+
+
+  }
+
+
+
+
+
+    /* For Mobile Portrait View (360 px)  */
+  @media screen and (mn-width:22.5rem) {
+    .contact-section{
+      max-height:20vh ;
+    }
+    .contact-section-inner{
+    max-height: 20vh;
+  } 
+    .contact-text{
+      padding: 0 0rem;
+      font-size:0.75rem;}
+  }
+  .contact-key{
+    font-size: 1rem;
+    top:32% ;
+  }
+  @media screen and (max-width:20rem){
+   
+  }
+  
+  
+  
+  
+  
+
+
+
+
