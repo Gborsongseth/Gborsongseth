@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Perseverance INT. School</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -66,12 +67,6 @@
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="">ABOUT</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html#mission">MISSION</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#gallary">GALLARY</a>
-                </li>
                 <li class="nav-item dropdown">
                   <a
                     class="nav-link dropdown-toggle"
@@ -84,7 +79,7 @@
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li><a class="dropdown-item" href="#">Enroll now </a></li>
                     <li>
-                      <a class="dropdown-item" href="#">FAQ's</a>
+                      <a class="dropdown-item" href="frequent.html">FAQ's</a>
                     </li>
                   </ul>
                 </li>
@@ -95,16 +90,47 @@
             </div>
           </div>
         </nav>
- <main> 
-    <section class="contact-section">
-        <div class="contact-section-inner">
-             <h2 class="contact-title"><strong class="clean">About</strong></h2>
-             <p class="contact-text"> We are honored to have you join our school community,<br> where we strive to foster a love of learning and a passion for excellence</p>
-            <a href="#contact-body"> <span class="contact-button"> <i class="bi bi-chevron-compact-up"></i></span></a>
+        <!-- about section -->
+<main class="bg-light"> 
+    <section class="about-section">
+        <div class="about-section-inner">
+             <h2 class="about-title" data-aos="fade-up"><strong class="clean">About</strong> Us  </h2>
+             <p class="about-us-text" data-aos="fade-right" data-aos-delay="600"> Who we are and where we're going </p>
+            <a href="#contact-body"> <span class="about-us-button"> <i class="bi bi-chevron-compact-up"></i></span></a>
         </div>
-    </section>   
- </main>
-      <footer>
+    </section> 
+   <section class="about-first-page">
+    <section class="top-info">
+       <div class="mission-about-box" data-aos="fade-up"
+       data-aos-anchor-placement="top-center"><h3 class="mission-about-title">Our<strong class="neat-clear"> Mission</strong></h3>
+       <p class="mission-about-text"><i class="quote-mission bi-chat-quote"></i> Educate, empower and enable all students to become caring contributing citizens who can succeed in an ever-changing world.</p>
+       </div> 
+       <img class="img-fluid learning-png" data-aos="fade-up"
+       data-aos-anchor-placement="top-center" src="/images/cuate.png" alt="">
+    </section>
+    <section class="top-vission-info"data-aos="fade-up"
+    data-aos-anchor-placement="top-center">
+      <img class="img-fluid vission-pic" src="/images/kabu.jpg" alt="">
+      <div class="mission-about-box">
+        <h3 class="mission-about-title">Our<strong class="neat"> Vission</strong></h3>
+        <p class="vission-about-text"><i class="quote-vission bi-chat-quote"></i> Develop well rounded, confident, responsible and world class individuals who aspire to achieve thier full potentials.</p>
+        </div> 
+    </section>
+    <section id="last-about-info" class="last-about-info"  data-aos="fade-up"
+    data-aos-anchor-placement="top-center">
+      <p class="last-about-text">Perseverance International School Complex is a private and international school that offers education from Preschool to Junior High and was established in the year 1970 to provide the opportunity for students to be successful through an optimum learning environment and competitive educational setting. Over the years, Perseverance International School has incessantly provided quality education to all caliber of people and philosophies for children of different cultutral, religious and economic backgrounds.
+       </p>
+       <img class="img-fluid vission-last-pic" src="/images/Derbii 1.jpg" alt="students dressed africa tradtional cloths"> 
+    </section>
+
+     <section class="continue-about-section"  data-aos="fade-right" data-aos-delay="700">
+      <img class="img-fluid continue-last-pic" src="/images/papaT.jpg" alt="">  
+      <p class="continue-about-text">Perseverance School offers a curriculum fashioned along the Ghana Education Service(GES) and the National Council for Curriculum and Assessment(NaCCA). It is also a member of the Ghana National Association of Private School(GNAPS). Perseverance International School enrolls approximately 1200 pupils from across the length and breadth of the country. Perseverance recognizes that a happy child is a successful one, that all children are creative and need to succeed. Therefore, we respect the individual needs of children; foster a caring and creative environment and emphasize the social, emotional, physical and intellectual development for each child.</p>
+     </section>
+    </section>  
+</main>
+  <!-- footer section -->
+    <footer>
     <section class="footer-wrapper">
       <div class="footer-overlay">
         <div class="footer-in-check">
@@ -163,5 +189,19 @@
     </section>
   </footer>
   <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+  crossorigin="anonymous"
+></script>
+  <script>
+    AOS.init({
+  delay:200, // values from 0 to 3000, with step 50ms
+  duration: 900, // values from 0 to 3000, with step 50ms
+  once: true, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+    });
+  </script>
   </body>
 </html>
